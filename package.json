@@ -1,0 +1,29 @@
+{
+  "name": "purdue-slack-course-watcher",
+  "version": "1.0.0",
+  "description": "Watches for class openings at Purdue and reports it to Slack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxattax97/purdue-slack-course-watcher.git"
+  },
+  "keywords": [
+    "slack",
+    "purdue",
+    "course",
+    "watcher"
+  ],
+  "author": "Max O'Cull",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Maxattax97/purdue-slack-course-watcher/issues"
+  },
+  "homepage": "https://github.com/Maxattax97/purdue-slack-course-watcher#readme",
+  "dependencies": {
+    "email": "^0.2.6",
+    "scrape": "^0.2.3"
+  }
+}
