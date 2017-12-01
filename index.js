@@ -4,7 +4,7 @@ var Email = require("email").Email;
 var scrape = require("scrape");
 
 var watchlist = [];
-var interval = 10;
+var interval = 60;
 
 function main(args) {
     console.log("Reading watchlist ...");
@@ -54,7 +54,7 @@ function checkOpenings() {
             var timestamp =  "[" + (new Date().toISOString()) + "]";
             if (classObj.remaining > 0) {
                 if (!item.notified) {
-                    console.log(timestamp + " " + classObj.shortName + " (" + classObj.longName + ") has " + classObj.remaining + " open seats. Notifying ...");
+                    console.log(timestamp + " " + classObj.shortName + " (" + classObj.longName + ") has " + classObj.remaining + " open seats. Notifying " + item.emails.split(",").length + " contacts ...");
                     notifyEmails(item.emails, classObj);
                     item.notified = true;
                 } else {
