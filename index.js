@@ -57,10 +57,14 @@ function checkOpenings() {
                     console.log(timestamp + " " + classObj.shortName + " (" + classObj.longName + ") has " + classObj.remaining + " open seats. Notifying " + item.emails.split(",").length + " contacts ...");
                     notifyEmails(item.emails, classObj);
                     item.notified = true;
-                } else {
-                    console.log(timestamp + " " + classObj.shortName + " (" + classObj.longName + ") has " + classObj.remaining + " open seats.");
                 }
+                //else {
+                    //console.log(timestamp + " " + classObj.shortName + " (" + classObj.longName + ") has " + classObj.remaining + " open seats.");
+                //}
             } else {
+                if (item.notified === true) {
+                    console.log(timestamp + " " + classObj.shortName + " (" + classObj.longName + ") has no remaining seats.");
+                }
                 item.notified = false;
             }
         }).catch(console.error);
