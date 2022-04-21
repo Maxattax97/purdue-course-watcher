@@ -177,7 +177,7 @@ function main() {
         return;
       }
 
-      if (i > watchlist.length) {
+      if (i >= watchlist.length) {
         watchlist = shuffle(watchlist);
         i = 0;
       }
