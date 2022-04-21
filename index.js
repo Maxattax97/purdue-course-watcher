@@ -142,7 +142,7 @@ function getAvailability(term, crn) {
 
 function notifyEmails(recipient, classObj) {
     var payload = new Email({
-        from: "resolute@maxocull.com",
+        from: "maxocull.com@gmail.com",
         to: recipient.split(","),
         subject: "Seat Opened",
         body: "There are " + classObj.remaining + " open seats in " + classObj.shortName + " (" + classObj.longName + ")"
