@@ -1,0 +1,7 @@
+{
+  "host": "smtp.gmail.com",
+  "auth": {
+    "user": "maxocull.com@gmail.com",
+    "pass": "opensesame"
+  }
+}
